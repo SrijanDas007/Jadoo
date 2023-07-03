@@ -1,0 +1,1167 @@
+h1,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+#hero {
+  min-height: 100vh;
+  background-image: url(/public/images/hero/deco_heroBgRight.svg),url(/public/images/hero/ellipse.svg);
+  background-repeat: no-repeat;
+  background-position: right top , top left;
+}
+
+.nav-container {
+  margin: 0 7%;
+}
+
+.ellipse {
+  position: absolute;
+}
+
+.heroBgRight {
+  margin-left: 60%;
+}
+
+.traveller {
+  display: inline-block;
+  vertical-align: middle;
+  width: 39em;
+  top: 0;
+  margin-right: 2%;
+}
+
+.heroBg {
+  overflow-x: hidden;
+}
+
+.plane-1 {
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 58%;
+}
+
+.plane-2 {
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 83.2%;
+}
+
+.signup {
+  min-width: 100px;
+}
+
+#nav-sign {
+  padding: 10px 15px;
+  border: 1px black solid;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+#nav-sign:hover {
+  background-color: rgb(75, 72, 72);
+  color: #fff;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.logo img {
+  width: 120px;
+  float: left;
+}
+
+.navbar {
+  padding: 0;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  font-family: "Open Sans";
+  font-size: 15px;
+  padding: 30px;
+  color: black;
+  display: block;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+header .navbar ul li a:hover {
+  color: rgb(243, 168, 18);
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 100px;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+}
+
+.dropdown {
+  width: 60px;
+  margin-top: 28px;
+  margin-left: 42px;
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.select-clicked {
+  border: 1px black solid;
+  box-shadow: 0 0 0.8em black;
+}
+
+.select:hover {
+  background: #ddd2b2;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #000000;
+  transition: 0.3s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  border: 1px black solid;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.3em;
+  color: #000000;
+  position: absolute;
+  top: 2.5em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.menu li {
+  padding: 0.1em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background: #ede2c9;
+}
+
+.active {
+  background: #ddd2b2;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+.padding-div {
+  padding-top: 110px;
+}
+
+.hero-content {
+  display: flex;
+  margin: auto 7%;
+}
+
+.content-left {
+  padding-top: 50px;
+}
+
+.hero-header span {
+  position: absolute;
+  background-image: url(/public/images/hero/deco-dash.svg);
+  background-repeat: no-repeat;
+  min-width: 310px;
+  min-height: 15px;
+  top: 265px;
+  left: 15%;
+  z-index: -1;
+}
+
+.hero-header {
+  font-family: "Volkhov";
+  color: #181e4b;
+  font-size: 56px;
+  padding-right: 40%;
+}
+
+.desc-header {
+  position: absolute;
+  margin-top: 16%;
+  margin-left: 7%;
+}
+
+.tagline {
+  padding: 0 15px 30px 0;
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #df6951;
+  font-weight: bold;
+}
+
+.deco-dash {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.deco-dash img {
+  width: 78%;
+}
+
+.desc-subheader {
+  padding: 25px 0;
+  font-family: "Poppins";
+  font-size: 1em;
+  font-weight: medium;
+  color: #5e6282;
+  padding-right: 40%;
+}
+
+.CTA {
+  border: none;
+}
+
+.btn-warning {
+  color: #fff;
+  background-color: #f1a501;
+  padding-bottom: 10px;
+}
+
+.btn-demo {
+  margin-left: 5%;
+  border: none;
+}
+
+.btn-demo-div {
+  transition: 0.3s;
+}
+
+.btn-demo-div:hover {
+  transform: scale(1.1);
+}
+
+.CTA span {
+  position: absolute;
+  margin-left: 1px;
+  width: 90px;
+  margin-top: 12px;
+  color: #686d77;
+}
+
+.play-demo {
+  color: #df6951;
+}
+
+.play-demo:hover {
+  color: #fb8269;
+}
+
+/* SERVICES CSS CODE */
+
+#services {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 5.5%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+.group4 {
+  position: absolute;
+  margin-left: 85%;
+}
+
+.group4 img {
+  width: 100%;
+}
+
+.category {
+  padding-top: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+.category h6 {
+  font-family: "Poppins";
+  color: #5e6282;
+  padding-bottom: 5px;
+}
+
+.category h1 {
+  font-family: "Volkhov";
+  color: #14183e;
+}
+
+.category-card {
+  margin-top: 5%;
+  width: 250px;
+  padding: 0;
+  border-radius: 40px;
+  text-align: center;
+  min-width: 250px;
+}
+
+.firstService {
+  display: flex;
+  justify-content: space-around;
+}
+
+.serviceInLine {
+  display: inline-block;
+  min-width: 250px;
+  padding: 10px 20px;
+}
+
+.category-common {
+  text-align: center;
+  border-radius: 40px;
+  transition: 0.3s;
+  padding-top: 15px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.category-common:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.8em rgb(168, 168, 168);
+}
+
+.category-common h6 {
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: #1e1d4c;
+  padding: 25px 10px 10px 15px;
+}
+
+.category-common p {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #5e6282;
+  padding-bottom: 25px;
+}
+
+.service-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 12%;
+}
+
+.hover-rectangle {
+  position: absolute;
+  z-index: -9;
+  margin-top: -4%;
+  margin-left: -2%;
+}
+
+.showme {
+  display: none;
+}
+
+.show-rectangle:hover .showme {
+  display: block;
+}
+
+/* DESTINATION CSS CODE */
+
+#destination {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.card-title {
+  font-family: "Poppins";
+  color: #5e6282;
+}
+
+.des-heading {
+  text-align: center;
+  padding-top: 3%;
+}
+
+.des-heading h6 {
+  font-family: "Poppins";
+  color: #5e6282;
+}
+
+.des-heading h1 {
+  font-family: "Volkhov";
+  color: #14183e;
+}
+
+.card-img-top {
+  border-radius: 40px 40px 0 0;
+}
+
+.card {
+  width: 16rem;
+  border-radius: 40px;
+  transition: 0.3s;
+  padding: 0px;
+  margin: 15px;
+  box-shadow: 0 0 0.8em rgb(168, 168, 168);
+}
+
+.card-body {
+  border-radius: 0 0 40px 40px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.8em rgb(168, 168, 168);
+}
+
+.card-text {
+  color: #1e3050;
+}
+
+.span-text {
+  color: #5e6282;
+}
+
+.des-card {
+  justify-content: space-around;
+  padding: 3% 12%;
+}
+
+.des-decor {
+  position: absolute;
+  width: 8%;
+  z-index: -1;
+  margin-left: 75%;
+  margin-top: 7%;
+}
+
+/* BOOK A TRIP CSS CODE */
+
+#bookATrip {
+  min-height: 100vh;
+  padding: 5% 9%;
+}
+
+#bookATrip h6 {
+  font-family: "Poppins";
+  color: #5e6282;
+  padding-bottom: 3%;
+  margin-left: 5%;
+}
+
+#bookATrip h1 {
+  font-family: "Volkhov";
+  color: #14183e;
+  margin-left: 5%;
+}
+
+.values {
+  padding: 3% 0;
+  margin-left: 5%;
+}
+
+.group7 {
+  margin: 5% 0;
+  height: 80px;
+}
+
+.group7 img {
+  position: absolute;
+  padding: 0;
+  margin: 0 10px 0 0;
+  width: 3.5%;
+}
+
+.group7 h6,
+.group7 p {
+  margin: 0 15%;
+}
+
+.group7 h6 {
+  font-weight: 900;
+  padding-left: 10%;
+}
+
+.group7 p {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #5e6282;
+}
+
+.bookATrip-img {
+  position: absolute;
+  margin-top: 5.5%;
+  margin-left: 5%;
+  width: 532px;
+}
+
+.group589 {
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  margin-left: 13%;
+  margin-top: -5%;
+}
+
+/* TESTIMONIAL CSS CODE */
+
+#Testimonial {
+  min-height: 100vh;
+}
+
+.container-fluid {
+  padding: 0 7%;
+}
+
+#Testimonial .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.test-head {
+  padding-left: 7%;
+  padding-top: 18%;
+}
+
+.test-left h5 {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #5e6282;
+}
+
+.test-left h1 {
+  font-family: "Volkhov";
+  font-size: 62px;
+  color: #14183e;
+}
+
+/* carousel */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.wrapper .card {
+  background: #fff;
+  width: 400px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  justify-content: space-between;
+  border-radius: 20px;
+  animation: animate 15s linear infinite;
+  animation-delay: calc(3s * var(--delay));
+}
+
+.wrapper:hover .card {
+  animation-play-state: paused;
+}
+
+.wrapper .card:last-child {
+  animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%,
+  20% {
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%,
+  40% {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%,
+  100% {
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%,
+  100% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+}
+
+.card .content {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .card .img {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card .img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.card .details {
+  margin-left: 40px;
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #5e6282;
+}
+
+.details span {
+  font-weight: 600px;
+  font-size: 16px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 7%;
+  margin-bottom: 5%;
+}
+
+.logos img {
+  transition: 0.3s;
+  filter: grayscale(100%);
+  padding: 0 2%;
+  border-radius: 10px;
+}
+
+.logos img:hover {
+  filter: grayscale(0%);
+  /* transform: scale(1.1); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* SEUBSCRIBE CSS CODE */
+
+#subscribe {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.rectangle {
+  position: absolute;
+  background-color: #f6f4fd;
+  margin: 10%;
+  border-radius: 100px 15px 15px 15px;
+  text-align: center;
+  padding: 0% 5%;
+  padding-bottom: 5%;
+  z-index: 0;
+}
+
+.rectangle h1 {
+  text-align: center;
+  color: #5e6282;
+  font-family: "Poppins";
+  padding: 7%;
+  margin: 0;
+  padding-bottom: 5%;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+}
+
+.icon {
+  padding: 22px 15px;
+  min-width: 40px;
+  margin-left: -16.5%;
+}
+
+.input {
+  width: 400px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.subscribe-btn {
+  background-image: linear-gradient(#ff946d, #ff7d68);
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: 14px;
+  padding: 18px 35px;
+  border: none;
+  border-radius: 12px;
+}
+
+.subscribe-btn:hover {
+  background-image: linear-gradient(#fa885f, #fd634c);
+}
+
+.email-area {
+  float: right;
+}
+
+.row-child {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1rem 1rem;
+}
+
+.maskGroup1 {
+  position: absolute;
+  z-index: 1;
+  left: -85px;
+  bottom: 0px;
+}
+
+.maskGroup2 {
+  position: absolute;
+  z-index: -1;
+  right: 0px;
+}
+
+.group77 {
+  position: absolute;
+  right: -30px;
+  top: -20px;
+}
+
+.group5 {
+  position: absolute;
+  right: 3.5%;
+  margin-top: 30%;
+  z-index: -3;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 0;
+  margin: 0;
+  min-height: 50vh;
+  overflow-x: hidden;
+  font-family: "Poppins";
+}
+
+.footer h6 {
+  font-weight: 900;
+  color: #080809;
+  padding-bottom: 20px;
+}
+
+.footer-head {
+  color: #181e4b;
+}
+
+.footer-subhead {
+  font-size: 12px;
+  color: #5e6282;
+}
+
+.company-desc {
+  padding-left: 25%;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #5e6282;
+  font-size: 16px;
+}
+
+.footer .col-lg-4 {
+  text-align: left;
+}
+
+.row1 {
+  padding-bottom: 15%;
+}
+
+.insta {
+  width: 42px;
+  border-radius: 100%;
+  box-shadow: 0 0 0.8em rgb(168, 168, 168);
+}
+
+.social {
+  text-align: center;
+}
+
+.social img {
+  margin: 0 2%;
+}
+
+.more {
+  margin-left: 31%;
+  margin-top: 3%;
+}
+
+.apps a {
+  padding: 1%;
+}
+
+.rights {
+  text-align: center;
+  font-size: 13px;
+  color: #5e6282;
+  padding-top: 2%;
+}
+
+/* RESPONSIVENESS */
+
+#menu-bar {           /*hamburger menu */
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 0px;
+    display: block;
+  }
+
+  header label {
+    position: relative;
+    float: right;
+    right: 4.5%;
+    display: initial;
+    z-index: 10;
+    padding: 0px 5px;
+  }
+
+  .logo img {
+    position: relative;
+    margin-left: 5%;
+  }
+
+  .nav-container {
+    margin: 0;
+    padding: 2.5%;
+  }
+
+  .navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: rgb(243, 168, 18);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    width: 100%;
+  }
+
+  #menu-bar {
+    margin-top: -100px;
+  }
+
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  header .navbar ul {
+    list-style: none;
+    display: block;
+    justify-content: space-around;
+  }
+
+  header .navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  #nav-sign {
+    margin: 20px 0;
+    border: none;
+  }
+
+  #nav-sign:hover {
+    background-color: rgb(243, 168, 18);
+  }
+
+  .hero-header span {
+    background-size: 70%;
+  }
+
+  .traveller {
+    width: 20em;
+  }
+
+  .hero-content {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .hero-header,
+  .tagline,
+  .desc-subheader {
+    padding-right: 0;
+  }
+
+  .btn-demo {
+    margin-left: 5px;
+  }
+
+  #hero .btn-warning {
+    margin-left: -80px;
+  }
+
+  .group4 {
+    display: none;
+  }
+
+  .firstService {
+    display: inline-block;
+  }
+
+  .des-decor {
+    display: none;
+  }
+
+  .bookATrip-img {
+    position: static;
+    width: 20em;
+    margin-top: 2%;
+  }
+
+  .col-img {
+    text-align: center;
+  }
+
+  .group7 {
+    padding-bottom: 50px;
+  }
+
+  .group589 {
+    margin-left: -25%;
+  }
+
+  .test-head {
+    padding-left: 0;
+    text-align: center;
+    padding-top: 0%;
+  }
+
+  .test-head h1 {
+    font-size: 1.8em;
+  }
+
+  .wrapper {
+    min-height: 1vh;
+  }
+
+  .wrapper .card {
+    width: 300px;
+  }
+
+  .wrapper .card .img {
+    left: -20px;
+  }
+
+  .card .img img {
+    border-radius: 100%;
+  }
+
+  .logos {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+  }
+
+  .logos img {
+    justify-self: center;
+  }
+
+  .maskGroup1,
+  .maskGroup2 {
+    display: none;
+  }
+
+  .rectangle h1 {
+    font-size: 1.5rem;
+    padding: 7% 4%;
+  }
+
+  .rectangle {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .rectangle i {
+    display: none;
+  }
+
+  .company-desc {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .footer .col-lg-4 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .more {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 980px) {
+  .traveller {
+    width: 32em;
+  }
+
+  .hero-header,
+  .tagline,
+  .desc-subheader {
+    padding-right: 0;
+  }
+
+  .hero-header span {
+    top: 46%;
+    left: 8%;
+  }
+
+  .des-decor {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .values {
+    min-height: 60vh;
+  }
+
+  .group7 {
+    padding-bottom: 120px;
+  }
+
+  .group7 img {
+    width: 8%;
+  }
+
+  #bookATrip h1 {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .group589 {
+    display: none;
+  }
+
+  .wrapper {
+    min-height: 100vh;
+  }
+
+  .rectangle h1 {
+    font-size: 0.9rem;
+    padding: 7% 0;
+    max-width: 250px;
+    margin-left: 12%;
+    padding-top: 10%;
+  }
+
+  .rectangle {
+    justify-self: center;
+    margin-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .row-child {
+    padding: 0.5rem 1rem;
+  }
+
+  .input {
+    width: 300px;
+  }
+
+  .group77 {
+    width: 3em;
+    right: -10px;
+    top: -10px;
+  }
+  .group5 {
+    margin-top: 70%;
+  }
+}
+
+@media (max-width: 1220px) and (min-width: 991px) {
+  .bookATrip-img {
+    width: 25em;
+  }
+}
