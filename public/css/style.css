@@ -7,9 +7,9 @@ ul {
 
 #hero {
   min-height: 100vh;
-  background-image: url(/public/images/hero/deco_heroBgRight.svg),url(/public/images/hero/ellipse.svg);
+  background-image: url(/public/images/hero/plane.svg),url(/public/images/hero/plane.svg),url(/public/images/hero/deco_heroBgRight.svg),url(/public/images/hero/ellipse.svg);
   background-repeat: no-repeat;
-  background-position: right top , top left;
+  background-position:62% 150px, 1220px 110px, right top , top left;
 }
 
 .nav-container {
